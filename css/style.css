@@ -8,7 +8,7 @@
 
 /* header */
 nav{
-    width: 17%;
+    width: 16%;
     height: 100%;
     background-color: #222222;
     position: fixed;
@@ -91,7 +91,7 @@ nav::-webkit-scrollbar{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .following_content:not(:last-child){
@@ -116,11 +116,11 @@ nav::-webkit-scrollbar{
 }
 
 .search_profile{
+    width: 83%;
     padding-top: 30px;
-    padding-left: 25px;
-    padding-right: 9%;
-    margin-left: 17%;
     margin-bottom: 70px;
+    margin-left: 17%;
+    padding-right: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -128,6 +128,7 @@ nav::-webkit-scrollbar{
 }
 .search{
     width: 446px;
+    height: 56px;
     padding: 20px 18px;
     border-radius: 12px;
     background-color: #F8F8F8;
@@ -180,14 +181,15 @@ input[type="search"], textarea:focus{
 
 /* main */
 
-main{
-    width: 83%;
+main, footer{
+    width: 100%;
 }
 
 .container{
-    max-width: 1200px;
+    /* max-width: 1231px; */
     width: 100%;
-    margin-left: 30%;
+    padding-left: 25.3%;
+    padding-right: 9.3%;
     /* background-color: violet; */
 }
 
@@ -453,7 +455,6 @@ article:hover .article_reacts{
 }
 
 footer .container{
-    margin-left: 25%;
     margin-bottom: 40px;
 }
 
