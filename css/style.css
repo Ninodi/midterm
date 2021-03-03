@@ -793,7 +793,6 @@ footer .black{
   }
 
   .upload{
-
     position: relative;
     width: 56px;
     height: 80px;
@@ -804,6 +803,7 @@ footer .black{
     display: none;
   }
 
+  .upload
   .upload_svg svg{
     display: block;
     width: 40px;
@@ -811,6 +811,7 @@ footer .black{
     fill: white;
     position: absolute;
     left: 27%;
+    top: 0px;
   }
 }
 
