@@ -803,7 +803,10 @@ footer .black{
     display: none;
   }
 
-  .upload
+  .upload_svg{
+    width: 100%;
+    height: 100%;
+  }
   .upload_svg svg{
     display: block;
     width: 40px;
