@@ -182,12 +182,15 @@ nav::-webkit-scrollbar {
   font-family: 'Avenir Heavy';
 }
 
+.border{
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgb(17, 17, 17, .05);
+  width: 77%;
+  margin-left: 18%;
+}
 .search_profile {
   width: 100%;
-  padding-top: 30px;
-  margin-bottom: 70px;
-  padding-left: 17%;
-  padding-right: 5%;
+  padding: 30px 5% 30px 17%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,6 +271,15 @@ textarea:focus {
   font-size: 14px;
   color: #ff2288;
 }
+
+.user_profile{
+  width: 56px;
+  height: 56px;
+  padding: 23%;
+  border: 2px solid #E7E7E7;
+  border-radius: 28px;
+}
+
 
 .upload {
   width: 129px;
@@ -767,7 +779,13 @@ footer .black{
     padding-left: 22%;
     padding-right: 3%;
   }
+
+  .border{
+    margin-left: 21%;
+    padding-right: 3%;
+  }
 }
+
 @media only screen and (max-width: 1250px){
   nav{
     width: 22%;
@@ -785,30 +803,11 @@ footer .black{
     width: 400px;
   }
 
-  /* .upload{
-    position: relative;
-    width: 56px;
-    height: 80px;
-    border-radius: 50%;
-    transform: scale(0.70005);
-  }
-  .upload a:first-child{
-    display: none;
+  .border{
+    width: 73%;
+    margin-left: 25%;
   }
 
-  .upload_svg{
-    width: 100%;
-    height: 100%;
-  }
-  .upload_svg svg{
-    display: block;
-    width: 40px;
-    height: 40px;
-    fill: white;
-    position: absolute;
-    left: 27%;
-    top: 27%;
-  } */
 }
 
 @media only screen and (max-width: 1112px){
@@ -834,6 +833,10 @@ footer .black{
       padding-left: 30%;
     }
 
+    .border{
+      width: 67%;
+      margin-left: 30%;
+    }
     .search_profile{
       max-width: 1000px;
       width: 100%;
@@ -877,9 +880,10 @@ footer .black{
       width: 40px;
       height: 40px;
       fill: white;
+      transform: scale(1.25);
       position: absolute;
-      left: 27%;
-      top: 27%;
+      left: 25%;
+      top: 25%;
     }
 }
 
@@ -890,6 +894,11 @@ footer .black{
 
   .profile a:first-child{
     display: none;
+  }
+
+  .border{
+    width: 62%;
+    margin-left: 35%;
   }
   .search_profile{
     padding-left: 35%;
@@ -1001,10 +1010,10 @@ footer .black{
     justify-content: space-around;
   }
 
-  .mailbox svg path, .notifs svg path{
+  .mailbox svg path, .notifs svg path, .user_profile svg path{
     fill: white;
-    transform: scale(1);
   }
+  
   main{
     padding-top: 100px;
   }
