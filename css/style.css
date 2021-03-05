@@ -323,7 +323,6 @@ footer {
 }
 
 .container {
-  /* max-width: 1231px; */
   width: 100%;
   padding-left: 25.3%;
   padding-right: 9.3%;
@@ -431,24 +430,6 @@ article img{
   border-radius: 25px;
 }
 
-@media screen and (max-width: 1600px) {
-  .article_sec {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  .article_sec {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 880px) {
-  .article_sec {
-    grid-gap: 20px 25px;
-  }
-}
-
 article {
   height: 280px;
   background-color: #ffffff;
@@ -456,11 +437,11 @@ article {
   position: relative;
 }
 
-@media screen and (max-width: 880px) {
+/* @media screen and (max-width: 880px) {
   article {
     height: 200px;
   }
-}
+} */
 
 article .article-content {
   height: 100%;
@@ -769,7 +750,83 @@ footer .black{
   font-family: 'Avenir Black';
 }
 
+/* profile page */
+
+/* main */
+
+.profile_page{
+  height: 840px;
+}
+.orders{
+  width: 100%;
+  height: 100%;
+}
+table{
+  height: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+th, tr{
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 2px solid #E7E7E7;
+  color: #AFAFAF;
+}
+
+tr:last-child{
+  border-bottom: unset;
+}
+
+th {
+  color: #111111;
+}
+
+tr:hover:not(:first-child){
+  background-color: #F2F2F2;
+}
+
+tr:hover td:first-child{
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+tr:hover td:last-child{
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+tr:hover td{
+  color: #222222;
+}
+
+tr:active td{
+  color: #FF2288;
+  
+}
+tr:active:hover{
+  background-color: unset;
+}
+
+
+
 /* responsive */
+@media screen and (max-width: 1600px) {
+  .article_sec {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .article_sec {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .article_sec {
+    grid-gap: 20px 25px;
+  }
+}
+
 
 @media only screen and (max-width: 1500px){
   nav{
