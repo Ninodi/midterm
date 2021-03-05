@@ -755,6 +755,7 @@ footer .black{
 /* main */
 
 .profile_page{
+  padding-right: 6%;
   height: 840px;
   margin-bottom: 130px;
 }
