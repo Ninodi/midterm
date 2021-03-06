@@ -182,15 +182,10 @@ nav::-webkit-scrollbar {
   font-family: 'Avenir Heavy';
 }
 
-.border{
-  margin-bottom: 40px;
-  border-bottom: 1px solid rgb(17, 17, 17, .05);
-  width: 77%;
-  margin-left: 18%;
-}
 .search_profile {
   width: 100%;
-  padding: 30px 5% 30px 17%;
+  padding: 30px 5% 70px 17%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,6 +201,15 @@ nav::-webkit-scrollbar {
           align-items: center;
 }
 
+.search_profile::after{
+  content: "";
+  height: 1px;
+  width: 78%;
+  background-color: #111111;
+  opacity: 5%;
+  bottom: 40px;
+  position: absolute;
+}
 .search {
   width: 446px;
   height: 56px;
@@ -867,7 +871,7 @@ tr.highlighted th:last-child::after{
   background-color:#E7E7E7;
 }
 .spacer{
-  height: 10px;
+  height: 11px;
   width: 100%;
   background-color: transparent;
 }
@@ -896,7 +900,7 @@ tr.highlighted th:last-child::after{
   justify-content: space-between;
 }
 
-.order_info div{
+.order_info div:not(:last-child){
   border-bottom: 2px solid #E7E7E7;
   height: 60px;
   display: flex;
@@ -938,11 +942,6 @@ tr.highlighted th:last-child::after{
     padding-right: 3%;
   }
 
-  .border{
-    margin-left: 21%;
-    padding-right: 3%;
-  }
-
   th:nth-child(2), th:nth-child(4), th:nth-child(5){
     padding-right: 80px;
   }
@@ -967,11 +966,6 @@ tr.highlighted th:last-child::after{
 
   .search{
     width: 400px;
-  }
-
-  .border{
-    width: 73%;
-    margin-left: 25%;
   }
 
   .profile_page{
@@ -1006,16 +1000,13 @@ tr.highlighted th:last-child::after{
       padding-left: 30%;
     }
 
-    .border{
-      width: 67%;
-      margin-left: 30%;
-    }
     .search_profile{
       max-width: 1000px;
       width: 100%;
       padding-left: 30%;
       padding-right: 2%;
     }
+
 
     .profile{
       width: 300px;
@@ -1079,10 +1070,6 @@ tr.highlighted th:last-child::after{
     display: none;
   }
 
-  .border{
-    width: 62%;
-    margin-left: 35%;
-  }
   .search_profile{
     padding-left: 35%;
   }
