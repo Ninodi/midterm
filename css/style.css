@@ -769,7 +769,7 @@ table{
   width: 100%;
   border-collapse: collapse;
 }
-th, tr.highlighted{
+th, tr.highlighted, .last{
   text-align: left;
   vertical-align: middle;
   color: #AFAFAF;
