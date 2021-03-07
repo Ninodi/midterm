@@ -745,7 +745,6 @@ p {
 }
 .offerings li:not(:first-child) a:hover{
   font-family: 'Avenir Heavy';
-  color: #222222;
 }
 
 .offerings ul li:first-child {
