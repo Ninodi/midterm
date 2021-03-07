@@ -261,6 +261,13 @@ textarea:focus {
   opacity: 50%;
 }
 
+::-moz-placeholder {
+  font-size: 14px;
+  font-family: 'Avenir Heavy';
+  color: #111111;
+  opacity: 50%;
+}
+
 ::placeholder {
   font-size: 14px;
   font-family: 'Avenir Heavy';
@@ -270,10 +277,19 @@ textarea:focus {
 
 .profile{
   width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .profile a:first-child {
@@ -433,6 +449,7 @@ footer {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 25px 1fr 25px 1fr 25px 1fr;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px 25px;
 }
@@ -448,12 +465,6 @@ article {
   margin-bottom: 20px;
   position: relative;
 }
-
-/* @media screen and (max-width: 880px) {
-  article {
-    height: 200px;
-  }
-} */
 
 article .article-content {
   height: 100%;
@@ -478,7 +489,8 @@ article .article-content img {
 
 article .article_title {
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -575,7 +587,6 @@ article:hover .article_reacts {
   padding-right: 11%;
 }
 .section_title {
-  /* padding-top: 60px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,9 +620,16 @@ article:hover .article_reacts {
   padding-left: 16%;
   margin-bottom: 60px;
   background-color: #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .designers {
   width: 100%;
@@ -930,7 +948,9 @@ tr.highlighted th:last-child::after{
 .orders_flex{
   height: 100%;
   width: 100%;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 400px 10px 400px;
   grid-template-columns: 400px 400px;
   grid-gap: 10px;
   grid-row-gap: 20px;
@@ -940,20 +960,36 @@ tr.highlighted th:last-child::after{
   height: 100%;
   border: 2px solid #222222;
   border-radius: 14px;
-  box-shadow: 4px 4px 10px rgb(255, 34, 136, 0.7);
+  -webkit-box-shadow: 4px 4px 10px rgb(255, 34, 136, 0.7);
+          box-shadow: 4px 4px 10px rgb(255, 34, 136, 0.7);
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .order_info div:not(:last-child){
   border-bottom: 2px solid #E7E7E7;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .more_orders{
@@ -963,6 +999,7 @@ tr.highlighted th:last-child::after{
 /* responsive */
 @media screen and (max-width: 1600px) {
   .article_sec {
+    -ms-grid-columns: 1fr 25px 1fr 25px 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -973,6 +1010,7 @@ tr.highlighted th:last-child::after{
 
 @media screen and (max-width: 1180px) {
   .article_sec {
+    -ms-grid-columns: 1fr 25px 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1083,7 +1121,9 @@ tr.highlighted th:last-child::after{
       width: 56px;
       height: 80px;
       border-radius: 50%;
-      transform: scale(0.70005);
+      -webkit-transform: scale(0.70005);
+          -ms-transform: scale(0.70005);
+              transform: scale(0.70005);
     }
     
     .upload a:first-child{
@@ -1099,7 +1139,9 @@ tr.highlighted th:last-child::after{
       width: 40px;
       height: 40px;
       fill: white;
-      transform: scale(1.25);
+      -webkit-transform: scale(1.25);
+          -ms-transform: scale(1.25);
+              transform: scale(1.25);
       position: absolute;
       left: 25%;
       top: 25%;
@@ -1109,6 +1151,7 @@ tr.highlighted th:last-child::after{
       padding: unset;
     }
     .orders_flex{
+      -ms-grid-columns: 300px 20px 300px;
       grid-template-columns: 300px 300px;
       grid-gap: 20px;
     }
@@ -1172,6 +1215,7 @@ tr.highlighted th:last-child::after{
   }
 
   .orders_flex{
+    -ms-grid-columns: 450px;
     grid-template-columns: 450px;
   }
 
@@ -1182,10 +1226,19 @@ tr.highlighted th:last-child::after{
 
 @media only screen and (max-width: 896px){
   .article_sec {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
 }
 
   article:nth-child(2n){
@@ -1219,7 +1272,8 @@ tr.highlighted th:last-child::after{
    }
    
    .designers, .offerings, .footer, .section_title{
-     justify-content: space-around;
+     -ms-flex-pack: distribute;
+         justify-content: space-around;
    }
 
    .offerings ul:nth-child(3){
@@ -1254,12 +1308,15 @@ tr.highlighted th:last-child::after{
     position: fixed;
     z-index: 2 ;
     background-color: #222222;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .nav_logo{
     padding-top: 20px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .mailbox svg path, .notifs svg path, .user_profile svg path{
