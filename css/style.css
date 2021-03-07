@@ -1217,6 +1217,7 @@ tr.highlighted th:last-child::after{
     width: 100%;
   }
   .search_profile{
+    height: 80px;
     padding-top: unset;
     padding-bottom: unset;
     position: fixed;
@@ -1270,11 +1271,13 @@ tr.highlighted th:last-child::after{
 
   nav{
     width: 40px;
+    height: 80px;
     padding-top: 15px;
   }
 
   .search_profile{
     padding-left: 15%;
+    height: 80px;
   }
   .search{
     width: 150px;
