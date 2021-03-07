@@ -1,9 +1,9 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<svg>
 <metadata>
-Created by FontForge 20190801 at Sun May 19 00:12:06 2019
- By root
+Created by FontForge 20120731 at Sun Mar  7 08:53:17 2021
+ By fw_worker
 Copyright \(c\) 2018 Monotype GmbH. All rights reserved.
 </metadata>
 <defs>
@@ -20,7 +20,7 @@ Copyright \(c\) 2018 Monotype GmbH. All rights reserved.
     cap-height="708"
     bbox="-168 -459 1394 1084"
     underline-thickness="50"
-    underline-position="-125"
+    underline-position="-75"
     stemh="60"
     stemv="66"
     unicode-range="U+000D-FEFF"

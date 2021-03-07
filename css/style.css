@@ -7,6 +7,9 @@
           box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
 /* header */
 nav {
   width: 16%;
@@ -162,7 +165,7 @@ nav::-webkit-scrollbar {
   margin-bottom: 15px;
 }
 
-.following_content > a {
+.following_content a {
   margin-left: 20px;
   color: #ffffff;
   font-size: 16px;
@@ -176,7 +179,7 @@ nav::-webkit-scrollbar {
   font-family: 'Avenir Heavy';
 }
 
-.following a {
+.following > a {
   color: #ffffff;
   font-size: 14px;
   font-family: 'Avenir Heavy';
@@ -259,6 +262,8 @@ textarea:focus {
 }
 
 ::placeholder {
+  font-size: 14px;
+  font-family: 'Avenir Heavy';
   color: #111111;
   opacity: 50%;
 }
@@ -273,6 +278,7 @@ textarea:focus {
 
 .profile a:first-child {
   font-size: 14px;
+  font-family: 'Avenir Heavy';
   color: #ff2288;
 }
 
@@ -381,7 +387,7 @@ footer {
 }
 
 .filter_option ul li:not(:first-child, :nth-child(3)) {
-  width: 83px;
+  width: 86px;
   height: 100%;
 }
 
@@ -394,6 +400,7 @@ footer {
 .filter_bar a {
   color: #222222;
   font-size: 16px;
+  font-family: 'Avenir Book';
 }
 
 .filter_button {
@@ -419,6 +426,7 @@ footer {
 .filter_button a {
   color: #222222;
   font-size: 16px;
+  font-family: 'Avenir Heavy';
 }
 
 .article_sec {
@@ -543,6 +551,7 @@ article:hover .article_reacts {
 .article_title a {
   color: #222222;
   font-size: 18px;
+  font-family: 'Avenir Medium';
 }
 
 .more_articles {
@@ -558,6 +567,7 @@ article:hover .article_reacts {
 .more_articles a {
   color: #222222;
   font-size: 16px;
+  font-family: 'Avenir Heavy';
 }
 
 .section_title {
@@ -579,12 +589,14 @@ article:hover .article_reacts {
 
 .section_title h1 {
   font-size: 32px;
+  font-family: 'Avenir Heavy';
 }
 
 .section_title a {
   color: #222222;
   opacity: 30%;
   font-size: 14px;
+  font-family: 'Avenir Heavy';
 }
 
 .designers {
@@ -631,15 +643,18 @@ article:hover .article_reacts {
   width: 70%;
   color: #222222;
   font-size: 16px;
+  font-family: 'Avenir Medium';
 }
 
 .profile_info p {
   font-size: 12px;
   opacity: 60%;
+  font-family: 'Avenir Book';
 }
 
-.profile_info .following_bar {
+.following_bar {
   font-size: 14px;
+  font-family: 'Avenir Heavy';
 }
 
 .profile_info a,
@@ -686,6 +701,7 @@ p {
 
 .offerings li a {
   font-size: 16px;
+  font-family: 'Avenir Book';
   color: #222222;
 }
 
@@ -693,6 +709,13 @@ p {
   margin-bottom: 56px;
 }
 
+.for_designers li:first-child a, .hire_designers li:first-child a, .company li:first-child a, .directories li:first-child a{
+  font-family: 'Avenir Heavy';
+}
+
+.hire_designers li:nth-child(5) a, .directories li:nth-child(7) a{
+  font-family: 'Avenir Heavy';
+}
 .hire_designers li:nth-child(5),
 .directories li:nth-child(7) {
   margin-top: 40px;
@@ -784,9 +807,18 @@ th:not(:last-child) {
   color: #111111;
 }
 
+th{
+  font-size: 18px;
+  font-family: 'Avenir Heavy';
+}
 th:last-child{
   padding-right: 100px;
   color: #111111;
+}
+
+table td{
+  font-size: 16px;
+  font-size: 'Avenir Heavy';
 }
 tr.highlighted:hover:not(:first-child), .last:hover{
   background-color: #F2F2F2;
@@ -1186,6 +1218,7 @@ tr.highlighted th:last-child::after{
   }
   .search_profile{
     padding-top: unset;
+    padding-bottom: unset;
     position: fixed;
     z-index: 2 ;
     background-color: #222222;
