@@ -709,8 +709,8 @@ p {
 }
 
 .offerings {
-  height: 500px;
-  width: 93%;
+  min-height: 500px;
+  width: 100%;
   margin-bottom: 112px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -737,6 +737,17 @@ p {
   color: #222222;
 }
 
+.offerings ul{
+  width: 30%;
+}
+.offerings ul:not(:first-child){
+  padding-left: 30px;
+}
+.offerings li:not(:first-child) a:hover{
+  font-family: 'Avenir Heavy';
+  color: #222222;
+}
+
 .offerings ul li:first-child {
   margin-bottom: 56px;
 }
@@ -745,14 +756,6 @@ p {
   font-family: 'Avenir Heavy';
 }
 
-.hire_designers li:nth-child(5) a, .directories li:nth-child(7) a{
-  font-family: 'Avenir Heavy';
-}
-.hire_designers li:nth-child(5),
-.directories li:nth-child(7) {
-  margin-top: 40px;
-  margin-bottom: 36px;
-}
 
 .more_offerings{
   display: none;
@@ -1002,10 +1005,6 @@ tr.highlighted th:last-child::after{
     -ms-grid-columns: 1fr 25px 1fr 25px 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
-
-  /* .cont{
-    padding-left: 10%;
-  } */
 }
 
 @media screen and (max-width: 1180px) {
@@ -1204,6 +1203,10 @@ tr.highlighted th:last-child::after{
       display: none;
   }
 
+  .offerings ul{
+    width: 30%;
+  }
+
   .offerings{
       width: 100%;
       margin-bottom: 50px;
@@ -1279,6 +1282,10 @@ tr.highlighted th:last-child::after{
    .offerings ul:nth-child(3){
     display: none;
   }
+
+  /* .offerings ul{
+    width: 40%;
+  } */
     .order_box{
       padding-left: 40%;
     }
