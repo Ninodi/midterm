@@ -1397,7 +1397,7 @@ tr.highlighted th:last-child::after{
 
 @media only screen and (max-width: 555px){
   .order_info{
-    width: 75%;
+    width: 80%;
   }
 
   .order_box{
@@ -1451,7 +1451,6 @@ tr.highlighted th:last-child::after{
   }
 
   .order_box{
-    
     padding-left: 10%;
   }
 
@@ -1465,7 +1464,13 @@ tr.highlighted th:last-child::after{
 
 @media only screen and (max-width: 380px){
   .order_info{
-    width: 55%;
+    max-width: 60%;
+    height: 80%;
+  }
+
+  .order_box{
+    padding-right: unset;
+    padding-left: 10%;
   }
   .offerings{
     height: 600px;
@@ -1486,5 +1491,16 @@ tr.highlighted th:last-child::after{
   }
   .filter_option ul li:nth-child(4){
     display: none;
+  }
+}
+
+@media only screen and (max-width: 340px){
+  .order_box{
+    padding-left: 12%;
+  }
+
+  .order_info{
+    max-width: 55%;
+    width: 55%;
   }
 }
