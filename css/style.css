@@ -1471,4 +1471,20 @@ tr.highlighted th:last-child::after{
     height: 600px;
     margin-bottom: 100px;
   }
+
+  .following_bar{
+    width: 80px;
+  }
+
+  .filter_bar{
+    justify-content: space-evenly;
+  }
+
+  .filter_button{
+    width: 40px;
+    height: 40px;
+  }
+  .filter_option ul li:nth-child(4){
+    display: none;
+  }
 }
