@@ -310,7 +310,8 @@ textarea:focus {
 .upload {
   width: 129px;
   height: 56px;
-  padding: 20px 40px;
+  padding-top: 20px;
+  padding-left: 35px;
   border-radius: 12px;
   background-color: #ff2288;
   cursor: pointer;
@@ -697,8 +698,8 @@ p {
 .following_bar {
   width: 100%;
   height: 44px;
-  padding-top: 12px;
   text-align: center;
+  background-color: unset;
   border: 1px solid #d8d8d8;
   border-radius: 12px;
 }
@@ -708,8 +709,11 @@ p {
   background-color: #f2f2f2;
 }
 
+.following_bar:focus{
+  outline: none;
+}
 .offerings {
-  height: 550px;
+  height: 570px;
   width: 100%;
   margin-bottom: 112px;
   display: -webkit-box;
@@ -732,6 +736,8 @@ p {
 }
 
 .offerings li a {
+  display: block;
+  height: 27px;
   font-size: 16px;
   font-family: 'Avenir Book';
   color: #222222;
@@ -749,12 +755,8 @@ p {
 
 .offerings ul li:first-child {
   margin-bottom: 56px;
-}
-
-.for_designers li:first-child a, .hire_designers li:first-child a, .company li:first-child a, .directories li:first-child a{
   font-family: 'Avenir Heavy';
 }
-
 
 .more_offerings{
   display: none;
@@ -1115,6 +1117,7 @@ tr.highlighted th:last-child::after{
     }
     
     .upload{
+      padding: 20px 40px;
       position: relative;
       width: 56px;
       height: 80px;
@@ -1273,9 +1276,9 @@ tr.highlighted th:last-child::after{
     display: none;
   }
 
-  /* .offerings ul{
+  .offerings ul{
     width: 40%;
-  } */
+  }
     .order_box{
       padding-left: 40%;
     }
@@ -1441,6 +1444,10 @@ tr.highlighted th:last-child::after{
 
   .filter_button{
     width: 80px;
+  }
+
+  .offerings ul{
+    width: 50%;
   }
 
   .order_box{
